@@ -1,25 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
-import styled from 'styled-components';
-
-const Link = styled.a``;
+import clsx from 'clsx';
 
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">
+		<div className={clsx('container', 'flex', 'place-content-center')}>
+			<header className="">
 				<img src={logo} className="App-logo" alt="logo" />
-				<p>
+				<p className="font-serif">
 					Edit <code>src/App.tsx</code> and save to reload.
 				</p>
-				<Link
-					className="App-link"
+				<a
+					className="font-mono text-red-700"
 					href="https://reactjs.org"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
 					Learn React
-				</Link>
+				</a>
 			</header>
 		</div>
 	);
